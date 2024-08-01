@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         body, html {
+            height: 100%;
+            margin: 0;
+            display: grid;
+            place-items: center;
+        }
+    </style>
 </head>
 <body>
-    <h2 align="center"> FORM </h2>
-    <form align = "center" action="">
+    <!-- <h2 align="center"> FORM </h2>
+    <form  action="">
         <Label for="username"> Name :</Label>
         <input type="text" id="username" name="username">
         <br><br>
@@ -21,19 +29,20 @@
         <input type="password" id="userpassword" name="userpassword">
         <br><br>
         <input type="submit">
-    </form>
+    </form> -->
 
 
     <form action="">
-        <label for="name">
-            Name :
-        </label>
-        <input type="text" id="name" name="name">
-        <br> <br>
-
-        
-        <input type="radio" id="Gender1" name="Gender" value="Male" checked> <label for="Gender1">Male</label>
-        <input type="radio" id="gender2" name="Gender" value="Female"> <label for="Gender2">Female</label>
+        <label for="username">Name : </label>
+        <input type="text" name="username" id="username" required> 
+        <br><br>
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="password">Passowrd :</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        <input type="submit">
 
     </form>
 </body>
